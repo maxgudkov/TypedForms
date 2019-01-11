@@ -1,0 +1,11 @@
+{
+  "name": "typed-forms",
+  "version": "0.0.1",
+  "description": "Typed Forms for Angular",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mint-dev",
+  "license": "ISC"
+}
