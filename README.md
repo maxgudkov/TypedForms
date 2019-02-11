@@ -34,3 +34,9 @@ Example TypedBuilder:
    ]
  });
  ```
+
+In template:
+```html
+<input type="text" [formControl]="myTypedControl">
+<span class="form-control-error">{{myTypedControl.error}}</span>
+```
