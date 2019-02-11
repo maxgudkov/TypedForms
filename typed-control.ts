@@ -91,7 +91,7 @@ export class TypedControl extends FormControl {
     const validatorsList: ValidatorFn[] = [];
     this.validators.forEach((key: unknown) => {
       if (typeof key === 'string') {
-        validatorsList.push(this.validators[key]);
+        validatorsList.push(Validators[key]);
       } else if (Array.isArray(key)) {
         validatorsList.push(Validators[key[0]](key[1]));
       } else if (typeof key === 'function') {
