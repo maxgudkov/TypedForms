@@ -82,7 +82,7 @@ export class TypedControl extends FormControl {
   private getValidationMessages(errors): { [key: string]: string } {
     Object.keys(errors).forEach(key => {
       const message = this.validationMessages[key] || this.validationMessages.$common || '';
-      errors[key] = typeof message === 'function' ? message.call(this, errors[key]) : message;
+      errors[key] = typeof message === 'function' ? message.call(this, { [key]: errors[key] }) : message;
     });
     return errors;
   }
