@@ -13,7 +13,7 @@ new TypedControl(
     ({value}: TypedControl): ValidationErrors | null => value === 'John Doe' ? null : {customValidatorError: true}
   ],
   {
-    required: 'It's required',
+    required: 'It\'s required',
     minlength: ({actualLength, requiredLength}) => `Required length: ${requiredLength}. Actual length: ${actualLength}`,
     customValidatorError: 'You aren't John Doe'
   }
