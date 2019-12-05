@@ -1,5 +1,5 @@
 # TypedForms
-Typed Forms for Angular
+Typed Forms for Angular 4+
 
 
 Example TypedControl:
